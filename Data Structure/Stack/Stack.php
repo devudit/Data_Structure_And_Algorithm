@@ -24,6 +24,22 @@ class Stack {
 	public function isEmpty() {
 		return empty($this->_items);
 	}
+
+    public function display()
+    {
+        print_r($this->_items);
+    }
 }
 
+$st = new Stack();
+
+$st->push(34);
+$st->push(36);
+$st->push(50);
+$st->push(90);
+$st->display();
+$st->pop();
+$st->display();
+$s = $st->peek();
+$st->display();
 ?>
